@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+body{
+    background-color: var(--Very-dark-blue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper{
+    width: 1110px;
+    height: 446px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;   
+    gap: 80px; 
+}
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section-text :first-child{
+    font-weight: 700;
+    color: var(--White);
+}
+
+.section-text :first-child>span{
+    color: var(--Soft-violet);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+.section-text :last-child{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--Slightly-transparent-white);
+}
+
+.section-number{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.number{
+    font-family: 'Lexend Deca', sans-serif;;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    color: var(--White);
+    gap: 90px;
+}
+
+.text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--Slightly-transparent-white);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.stats-img{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.stats-img img{
+    width: 540px;
+    height: 446px;
+}
+
+.stats-img::before{
+     width: 100%;
+     height: 100%;
+     content: "";    
+     position: absolute;
+     background-color: var(--Soft-violet);
+     top: 0;
+     left: 0;
+     z-index: 1;
+     border-radius: 0px 10px 10px 0px;
+     opacity: 0.5;
+
+}
+
+.stats-img img{
+    border-radius: 0px 10px 10px 0px;
+}

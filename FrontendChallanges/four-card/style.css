@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: max-content;
+    font-family: 'Poppins', sans-serif;
+    background: var(--Very-Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 165px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tittle :first-child{
+    font-weight: 200;
+    color: var(--Very-Dark-Blue );
+}
+
+.tittle :last-child{
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.content p{
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    padding: 0px 310px;
+    text-align: center;
+}
+
+
+.boxs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.wrapper-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card{
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card h3{
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.card p{
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+
+.card img{
+    width: 64px;
+    height: 64px;
+    padding-left: 270px;
+    padding-top: 90px;
+}
+
+
+.card-border1{
+    border-top: 3px solid var(--Cyan);
+}
+
+.card-border2{
+    border-top: 3px solid var(--Red);
+}
+
+.card-border3{
+    border-top: 3px solid var(--Orange);
+}
+
+.card-border4{
+    border-top: 3px solid var(--Blue);
+}

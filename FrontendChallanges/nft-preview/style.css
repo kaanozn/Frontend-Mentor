@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --middle-darkk-blue: hsl(216, 50%, 16%);
+    --less-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 150px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.wrapper{
+    width: 350px;
+    height: 595px;
+    padding: 24px;
+    background: var(--middle-darkk-blue);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.nft-image{
+    width: 302px;
+    height: 302px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.nft-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.nft-image:hover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--Cyan);
+    opacity: 0.5;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.nft-image:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.text :first-child{
+    font-weight: 600;
+    cursor: default;
+    color: var(--White);
+}
+
+.text :first-child:hover{
+    color: var(--Cyan);
+    
+}
+
+.text :last-child{
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.nft-mach{
+    display: flex;
+    gap: 110px;
+}
+
+.nft-mach span{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nft-mach :first-child{
+    font-weight: 400;
+    color: var(--Cyan);
+}
+
+.nft-mach :last-child{
+    font-weight: 400;
+    color: var(--Soft-blue);
+}
+
+hr{
+    border: 1px solid var(--less-dark-blue);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile img{
+    width: 31px;
+    height: 31px;
+    border: 1px solid var(--White);
+    border-radius: 50px;
+
+}
+
+.profile-text{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.profile-text :first-child{
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.profile-text :last-child{
+    font-weight: 300;
+    color: var(--White);
+    cursor: default;
+    
+}
+
+.profile-text :last-child:hover{
+    color: var(--Cyan);
+    
+}

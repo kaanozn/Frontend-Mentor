@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+body::before, body::after{
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body::before{
+    background-image: url(images/bg-pattern-top.svg);
+    background-position: -250px -500px;
+}
+
+body::after{
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-position: 700px 400px;
+}
+
+
+.wrapper{
+    width: 350px;
+    height: 375px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;    
+}
+
+.wrapper::after{
+    content: "";
+    width: 96px;
+    height: 96px;
+    background-image: url(images/image-victor.jpg);
+    z-index: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 85px;
+    left: 120px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.bg-img img{
+    width: 350px;
+    height: 140px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-text :first-child{
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.profile-text :first-child>span, :last-child{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.profile-text :last-child{  
+    color: var(--Dark-grayish-blue);
+}
+
+hr{
+    width: 137%;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.number :first-child{
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.number :last-child{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    font-size: 10px;
+}
